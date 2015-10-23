@@ -1,17 +1,17 @@
 # install.packages("genalg")
-# library(genalg)
+library(genalg)
 # install.packages("ggplot2")
-# library(ggplot2)
+library(ggplot2)
 
-setwd('E:\\UG\\io')
+setwd('E:\\UG\\io\\lab1')
 
 
 phi1 <- read.csv(file="phi1.cnf", header=FALSE, sep="")
 phi2 <- read.csv(file="phi2.cnf", header=FALSE, sep="")
 
  
-phi <- phi2
-maxofphi <- max(phi2, na.rm = TRUE)
+phi <- phi1
+maxofphi <- max(phi, na.rm = TRUE)
  
 fitness <- function(podstawienie, formula){
 	counter <- 0
